@@ -1,3 +1,4 @@
+<button id="back-to-top-btn" alt="Til toppen"><span>⬆</span></button>
 <div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
@@ -79,6 +80,7 @@
                 <li class="meta-data">{{date article.edited_at timeago=true}}</li>
                 <li class="meta-data">{{t 'updated'}}</li>
               {{/is}}
+              <li class="meta-data"><a href="javascript:window.print();"><img alt="print" src="{{asset '1B3D5CFC.PNG'}}">Udskriv</a></li>
             </ul>
           </div>
         </div>
@@ -133,7 +135,7 @@
             {{/if}}
           {{/if}}
         </div>
-        {{#with article}}
+       <!-- {{#with article}}
           <div class="article-votes">
             <span class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</span>
             <div class="article-votes-controls" role="group" aria-labelledby="article-votes-label">
@@ -144,9 +146,9 @@
               {{vote 'label' class='article-vote-label'}}
             </small>
           </div>
-        {{/with}}
+        {{/with}} -->
 
-        <div class="article-more-questions">
+       <!-- <div class="article-more-questions">
           {{request_callout}}
         </div>
         <div class="article-return-to-top">
@@ -156,7 +158,7 @@
               <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
             </svg>
           </a>
-        </div>
+        </div> -->
       </footer>
 
       <div class="article-relatives">

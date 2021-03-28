@@ -1,5 +1,5 @@
-<a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
-
+<a class="skip-navigation" tabindex="-1" href="#main-content">{{t 'skip_navigation' }}</a>
+<div class="alertbox"></div>
 <header class="header">
   <div class="logo">
     {{#link 'help_center'}}
@@ -16,8 +16,8 @@
       </svg>
     </button>
     <nav class="user-nav" id="user-nav">
-      {{link 'community'}}
-      {{link 'new_request' class='submit-a-request'}}
+      <a href="https://elearning.kirkeuddannelse.dk" target="_blank">Uddannelse og videoer</a>
+      <a href="https://ihlp.kirkenettet.dk/popup.aspx?popup=customtemplate&subaction=verificeringssager&relationname=itemverificeringssagerrequestservice&label=itemverificeringssager" target="_blank">Bestil verificering</a>
     </nav>
     {{#if signed_in}}
       <div class="user-info dropdown">
@@ -38,9 +38,10 @@
         </div>
       </div>
     {{else}}
+         <!-- Disabled Signin, moved to footer
       {{#link "sign_in" class="sign-in"}}
         {{t 'sign_in'}}
-      {{/link}}
+      {{/link}} -->
     {{/if}}
   </div>
 </header>
