@@ -1,3 +1,54 @@
+## [2.12.2](https://github.com/zendesk/copenhagen_theme/compare/v2.12.1...v2.12.2) (2021-11-24)
+
+
+### Bug Fixes
+
+* search input field background color in iOS ([1e0059e](https://github.com/zendesk/copenhagen_theme/commit/1e0059ed1961c7580f644e6fed72539601c7d58a))
+
+## [2.12.1](https://github.com/zendesk/copenhagen_theme/compare/v2.12.0...v2.12.1) (2021-11-23)
+
+
+### Bug Fixes
+
+* Remove refs to AppleGothic ([8951af5](https://github.com/zendesk/copenhagen_theme/commit/8951af5290537984e8b2297e9a60ef796c98c6b4))
+
+# [2.12.0](https://github.com/zendesk/copenhagen_theme/compare/v2.11.2...v2.12.0) (2021-11-10)
+
+
+### Features
+
+* menu item for upcoming contact details modal ([57b7a94](https://github.com/zendesk/copenhagen_theme/commit/57b7a94e9542f60111a03b37444ff43a672a3800))
+
+## [2.11.2](https://github.com/zendesk/copenhagen_theme/compare/v2.11.1...v2.11.2) (2021-10-07)
+
+
+### Bug Fixes
+
+* Adding topic ID to the bottom New post button ([4d06689](https://github.com/zendesk/copenhagen_theme/commit/4d066890e68f529275e7fc34cc296ff52dc648f3))
+
+## [2.11.1](https://github.com/zendesk/copenhagen_theme/compare/v2.11.0...v2.11.1) (2021-09-15)
+
+
+### Bug Fixes
+
+* [COMM-1046] Fix an issue with a self-closing div tag ([55491f2](https://github.com/zendesk/copenhagen_theme/commit/55491f2382870f25141cee4fa86b70dd6b9ae45d))
+
+# [2.11.0](https://github.com/zendesk/copenhagen_theme/compare/v2.10.0...v2.11.0) (2021-09-14)
+
+
+### Features
+
+* [COMM-1046] Update layout for badge widget ([274b091](https://github.com/zendesk/copenhagen_theme/commit/274b0914d2ee6974a120f3fa2c9992feeba7aa61))
+* implement +n badge widget ([5f08c9a](https://github.com/zendesk/copenhagen_theme/commit/5f08c9a7aff9c633111b0a2f853e380a325e98fb))
+* move badge titles next to achievement badges ([21f855d](https://github.com/zendesk/copenhagen_theme/commit/21f855d02665f7d51884df4131db327b31c32217))
+
+# [2.10.0](https://github.com/zendesk/copenhagen_theme/compare/v2.9.1...v2.10.0) (2021-03-30)
+
+
+### Features
+
+* Set the `show_brand_name` setting to true ([10fc33f](https://github.com/zendesk/copenhagen_theme/commit/10fc33f9d88af15bb834e557cfe47190dba7e8a4))
+
 ## [2.9.1](https://github.com/zendesk/copenhagen_theme/compare/v2.9.0...v2.9.1) (2021-03-19)
 
 
