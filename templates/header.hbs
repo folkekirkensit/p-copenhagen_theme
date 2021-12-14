@@ -77,14 +77,16 @@
           <li class="nav-divider"></li>
         {{else}}
           <li class="item">
-            {{#link "sign_in" role="menuitem"}}
+            <a href="https://elearning.kirkeuddannelse.dk" target="_blank">Uddannelse og videoer</a>
+            <a href="https://ihlp.kirkenettet.dk/popup.aspx?popup=customtemplate&subaction=verificeringssager&relationname=itemverificeringssagerrequestservice&label=itemverificeringssager" target="_blank">Bestil verificering</a>
+            <!--{{#link "sign_in" role="menuitem"}}
               {{t 'sign_in'}}
-            {{/link}}
+            {{/link}}-->
           </li>
           <li class="nav-divider"></li>
         {{/if}}
         <li class="item">{{link 'community' role="menuitem"}}</li>
-        <li class="item">{{link 'new_request' role="menuitem" class='submit-a-request'}}</li>
+        <!--<li class="item">{{link 'new_request' role="menuitem" class='submit-a-request'}}</li>-->
         <li class="nav-divider"></li>
         {{#if signed_in}}
           <li class="item">
