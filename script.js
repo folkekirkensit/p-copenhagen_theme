@@ -397,19 +397,56 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // MW-Notification Banner
-$.get( "/api/v2/help_center/articles.json?label_names=drift" ).done(function( data ) {
+document.addEventListener('DOMContentLoaded', async function () {
+  // Article label to be considered for the alerts
+  const label = 'drift'
 
-  $.each(data.articles, function(index,item) {
+  // Get current help center locale
+  const locale = document
+      .querySelector('html')
+      .getAttribute('lang')
+      .toLowerCase()
 
-    var style1 = '<div class="ns-box ns-bar ns-effect-slidetop ns-type-notice ns-show"><div class="ns-box-inner"><span class="megaphone"></span></i><p><a href="'+ item.html_url + '">' + item.title  + ' | Tryk her for at læse mere</a>' + '</p></div><span class="ns-close"></span></div>'
+  // URL to be called to get the alert data
+  const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`
 
-    $('.alertbox').append(style1);
-  });
-  $('.ns-close').on('click',function(){
-    $(".alertbox").remove();
-  });
+  // Raw data collected from the endpoint above
+  const data = await (await fetch(url)).json()
 
-});
+  // List of articles returned
+  const articles = (data && data.articles) || []
+
+  // Handle returned articles
+  for (let i = 0; i < articles.length; i++) {
+    const url = articles[i].html_url
+    const title = articles[i].title
+    const aid = articles[i].id
+    if (sessionStorage.getItem(aid) === "closed") {continue}
+    const html = `
+      <div class="ns-box ns-bar ns-effect-slidetop ns-type-notice ns-show">
+        <div class="ns-box-inner">
+          <span class="megaphone"></span>
+          <p>
+            <a href="${url}">${title} | Tryk her for at læse mere</a>
+          </p>
+        </div>
+        <span class="ns-close"></span>
+      </div>
+    `
+    // Append current alert to the alertbox container
+    document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html)
+  }
+})
+
+
+document.addEventListener('click', function (event) {
+  // Close alertbox
+  if (event.target.matches('.ns-close')) {
+    event.preventDefault()
+    sessionStorage.setItem(event.target.parentElement.id, "closed")
+    event.target.parentElement.remove()
+  }
+})
 
 // Tilbage til top knap
 if (document.location.pathname.match(/hc\/da\/articles/)) {
