@@ -1707,6 +1707,8 @@ table td {
 .article-body img {
   height: auto;
   max-width: 100%;
+  border-style: solid;
+  border-width: thin;
 }
 
 .article-body ul, .article-body ol {
