@@ -270,7 +270,7 @@ select {
   -moz-appearance: none;
   background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23CCC' d='M0 0h10L5 6 0 0z'/%3E%3C/svg%3E%0A") no-repeat #fff;
   background-position: right 10px center;
-  border: 1px solid #ddd;
+  border: 1px solid #87929D;
   border-radius: 4px;
   padding: 8px 30px 8px 10px;
   outline: none;
@@ -287,7 +287,7 @@ select::-ms-expand {
 }
 
 textarea {
-  border: 1px solid #ddd;
+  border: 1px solid #87929D;
   border-radius: 2px;
   resize: vertical;
   width: 100%;
@@ -428,7 +428,7 @@ ul {
 
 .button-secondary {
   color: lighten($text_color, 20%);
-  border: 1px solid #ddd;
+  border: 1px solid #87929D;
   background-color: transparent;
 }
 
@@ -438,7 +438,7 @@ ul {
 
 .button-secondary:hover, .button-secondary:focus, .button-secondary:active {
   color: $text_color;
-  border: 1px solid #ddd;
+  border: 1px solid #87929D;
   background-color: darken($background_color, 3%);
 }
 
@@ -565,7 +565,7 @@ table td {
 }
 
 .form-field input {
-  border: 1px solid #ddd;
+  border: 1px solid #87929D;
   border-radius: 4px;
   padding: 10px;
   width: 100%;
@@ -576,7 +576,7 @@ table td {
 }
 
 .form-field input[type="text"] {
-  border: 1px solid #ddd;
+  border: 1px solid #87929D;
   border-radius: 4px;
 }
 
@@ -590,6 +590,7 @@ table td {
 
 .form-field .nesty-input {
   border-radius: 4px;
+  border: 1px solid #87929D;
   height: 40px;
   line-height: 40px;
   outline: none;
@@ -599,6 +600,10 @@ table td {
 .form-field .nesty-input:focus {
   border: 1px solid $brand_color;
   text-decoration: none;
+}
+
+.form-field .hc-multiselect-toggle {
+  border: 1px solid #87929D;
 }
 
 .form-field .hc-multiselect-toggle:focus {
@@ -1090,7 +1095,7 @@ table td {
 }
 
 .search {
-  border-color: #ddd;
+  border-color: #87929D;
   border-radius: 30px;
   border-style: solid;
   border-width: 1px;
@@ -1546,6 +1551,10 @@ table td {
   border-bottom: 1px solid #ddd;
   overflow: auto;
   padding: 20px 0;
+}
+
+.recent-activity-item h3 {
+  margin: 0;
 }
 
 .recent-activity-item-parent {
@@ -2043,7 +2052,7 @@ table td {
 }
 
 .article-return-to-top {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #87929D;
 }
 
 @media (min-width: 1024px) {
@@ -4755,18 +4764,18 @@ table td {
   }
 }
 
-.search-results .meta-group > li {
+.search-results .meta-group > span {
   display: block;
 }
 
 @media (min-width: 1024px) {
-  .search-results .meta-group > li {
+  .search-results .meta-group > span {
     display: inline;
   }
 }
 
 @media (min-width: 1024px) {
-  .search-results .meta-group li:first-child {
+  .search-results .meta-group span:first-child {
     flex: 1;
   }
 }
@@ -5065,7 +5074,7 @@ html[dir="rtl"] .notification-left-aligned {
 
 .dropdown-menu {
   background: #fff;
-  border: 1px solid #d8d8d8;
+  border: 1px solid #87929D;
   border-radius: 3px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   display: none;
@@ -5201,6 +5210,27 @@ html[dir="rtl"] .notification-left-aligned {
 .content-tag-list li:last-child {
   border: none;
 }
+
+/***** WYSIWYG Editor *****/
+#hc-wysiwyg {
+  border: 1px solid #87929D;
+}
+
+/***** Upload Dropzone *****/
+.upload-dropzone {
+  border: 1px solid #87929D;
+}
+
+/***** WYSIWYG Editor *****/
+#hc-wysiwyg {
+  border: 1px solid #87929D;
+}
+
+/***** Upload Dropzone *****/
+.upload-dropzone {
+  border: 1px solid #87929D;
+}
+
 
 /*MW-Notificaiton Banner CSS */
 /* Common, default styles for the notification box */

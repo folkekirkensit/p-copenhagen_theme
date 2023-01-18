@@ -73,15 +73,15 @@
               {{/link}}
             {{/if}}
 
-            <ul class="meta-group">
+            <div class="meta-group">
               {{#is article.created_at article.edited_at}}
-                <li class="meta-data">{{date article.created_at timeago=true}}</li>
+                <span class="meta-data">{{date article.created_at timeago=true}}</span>
               {{else}}
-                <li class="meta-data">{{date article.edited_at timeago=true}}</li>
-                <li class="meta-data">{{t 'updated'}}</li>
+                <span class="meta-data">{{date article.edited_at timeago=true}}</span>
+                <span class="meta-data">{{t 'updated'}}</span>
               {{/is}}
-              <li class="meta-data"><a href="javascript:window.print();"><img alt="print" src="{{asset '1B3D5CFC.PNG'}}">Udskriv</a></li>
-            </ul>
+              <span class="meta-data"><a href="javascript:window.print();"><img alt="print" src="{{asset '1B3D5CFC.PNG'}}">Udskriv</a></span>
+            </div>
           </div>
         </div>
 
@@ -222,7 +222,7 @@
                           <img src="{{author.avatar_url}}" alt="" class="user-avatar"/>
                         </div>
                         <div class="comment-meta">
-                          <span title="{{author.name}}">
+                          <span title="{{author.name}}" id="{{anchor}}-author">
                             {{#link 'user_profile' id=author.id}}
                               {{author.name}}
                             {{/link}}
@@ -236,14 +236,14 @@
                             {{/each}}
                           </span>
 
-                          <ul class="meta-group meta-group-opposite">
+                          <div class="meta-group meta-group-opposite">
                             {{#if editor}}
-                              <li class="meta-data">{{date edited_at timeago=true}}</li>
-                              <li class="meta-data">{{t 'edited'}}</li>
+                              <span class="meta-data">{{date edited_at timeago=true}}</span>
+                              <span class="meta-data">{{t 'edited'}}</span>
                             {{else}}
-                              <li class="meta-data">{{date created_at timeago=true}}</li>
+                              <span class="meta-data">{{date created_at timeago=true}}</span>
                             {{/if}}
-                          </ul>
+                          </div>
 
                           <div aria-label="{{t 'badges'}}" class="community-badge-container-achievements">
                             {{#each (
@@ -284,18 +284,18 @@
                         </div>
                       </div>
 
-                      <section class="comment-body">{{body}}</section>
+                      <section class="comment-body" id="{{anchor}}-body">{{body}}</section>
                     </div>
 
                     <div class="comment-actions-container">
                       <div class="comment-vote vote" role="group">
-                        {{#vote 'up' role='radio' class='vote-up' selected_class='vote-voted'}}
+                        {{#vote 'up' role='radio' class='vote-up' selected_class='vote-voted' aria-describedby=(concat anchor "-author " anchor "-body")}}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16">
                           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4 6.5l3.6 3.6c.2.2.5.2.7 0L12 6.5"/>
                         </svg>
                         {{/vote}}
                         {{vote 'sum' class='vote-sum'}}
-                        {{#vote 'down' role='radio' class='vote-down' selected_class='vote-voted'}}
+                        {{#vote 'down' role='radio' class='vote-down' selected_class='vote-voted' aria-describedby=(concat anchor "-author " anchor "-body")}}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16">
                           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4 6.5l3.6 3.6c.2.2.5.2.7 0L12 6.5"/>
                         </svg>
