@@ -4892,7 +4892,7 @@ table td {
 
 @media (min-width: 1024px) {
   .search-result-breadcrumbs li {
-    display: table-cell;
+    /* display: table-cell; */
   }
 }
 
