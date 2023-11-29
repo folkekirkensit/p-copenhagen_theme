@@ -17,13 +17,13 @@
         <a href="https://elearning.kirkeuddannelse.dk" target="_blank">Uddannelse og videoer</a>
         <a href="https://ihlp.kirkenettet.dk/popup.aspx?popup=customtemplate&subaction=verificeringssager&relationname=itemverificeringssagerrequestservice&label=itemverificeringssager" target="_blank">Bestil verificering</a>
         <!--<li>{{link 'new_request' class='submit-a-request'}}</li>-->
-        <!--{{#unless signed_in}}
+        {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in"}}
               {{t 'sign_in'}}
             {{/link}}
           </li>
-        {{/unless}}-->
+        {{/unless}}
       </ul>
     </nav>
     {{#if signed_in}}
@@ -80,9 +80,9 @@
           <li class="item">
             <a href="https://elearning.kirkeuddannelse.dk" target="_blank">Uddannelse og videoer</a>
             <a href="https://ihlp.kirkenettet.dk/popup.aspx?popup=customtemplate&subaction=verificeringssager&relationname=itemverificeringssagerrequestservice&label=itemverificeringssager" target="_blank">Bestil verificering</a>
-            <!--{{#link "sign_in" role="menuitem"}}
+            {{#link "sign_in" role="menuitem"}}
               {{t 'sign_in'}}
-            {{/link}}-->
+            {{/link}}
           </li>
           <li class="nav-divider"></li>
         {{/if}}
