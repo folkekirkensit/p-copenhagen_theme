@@ -14,8 +14,8 @@
     <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
       <ul class="user-nav-list">
         <li>{{link 'community'}}</li>
-        <a href="https://uddannelse.kirkenettet.dk" target="_blank">Uddannelse og videoer</a>
-        <a href="https://ihlp.kirkenettet.dk/popup.aspx?popup=customtemplate&subaction=verificeringssager&relationname=itemverificeringssagerrequestservice&label=itemverificeringssager" target="_blank">Bestil verificering</a>
+        <li><a href="https://uddannelse.kirkenettet.dk" target="_blank">Uddannelse og videoer</a></li>
+        <li><a href="https://verificeringsformular.kirkenettet.dk/" target="_blank">Bestil verificering</a></li>
         <!--<li>{{link 'new_request' class='submit-a-request'}}</li>-->
         {{#unless signed_in}}
           <li>
@@ -87,6 +87,8 @@
           <li class="nav-divider"></li>
         {{/if}}
         <li class="item">{{link 'community' role="menuitem"}}</li>
+        <li class="item"><a href="https://uddannelse.kirkenettet.dk" target="_blank">Uddannelse og videoer</a></li>
+        <li class="item"><a href="https://verificeringsformular.kirkenettet.dk/" target="_blank">Bestil verificering</a></li>
         <!--<li class="item">{{link 'new_request' role="menuitem" class='submit-a-request'}}</li>-->
         <li class="nav-divider"></li>
         {{#if signed_in}}

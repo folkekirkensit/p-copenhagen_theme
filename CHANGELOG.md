@@ -1,3 +1,38 @@
+## [4.0.11](https://github.com/zendesk/copenhagen_theme/compare/v4.0.10...v4.0.11) (2024-08-21)
+
+
+### Bug Fixes
+
+* support more uncommon file types for attachments ([97d1fa3](https://github.com/zendesk/copenhagen_theme/commit/97d1fa3aa9faa27e16b897bf19b5ba96d25092f7))
+
+## [4.0.10](https://github.com/zendesk/copenhagen_theme/compare/v4.0.9...v4.0.10) (2024-08-21)
+
+
+### Bug Fixes
+
+* update wysiwyg package to 0.0.5 ([90c8762](https://github.com/zendesk/copenhagen_theme/commit/90c87628a6d8b18f1f84578cdc735c9e70618190))
+
+## [4.0.9](https://github.com/zendesk/copenhagen_theme/compare/v4.0.8...v4.0.9) (2024-08-16)
+
+
+### Bug Fixes
+
+* correctly apply end user conditions ([f0e6f61](https://github.com/zendesk/copenhagen_theme/commit/f0e6f61b5ce7c3c12c36b7ca360c561f3190b743))
+
+## [4.0.8](https://github.com/zendesk/copenhagen_theme/compare/v4.0.7...v4.0.8) (2024-08-16)
+
+
+### Bug Fixes
+
+* fixed styles with dark background and light brand color ([d173e64](https://github.com/zendesk/copenhagen_theme/commit/d173e640abcdc3945ded2a822bb3a206cd34b2ce))
+
+## [4.0.7](https://github.com/zendesk/copenhagen_theme/compare/v4.0.6...v4.0.7) (2024-08-16)
+
+
+### Bug Fixes
+
+* fixed attachments upload for uncommon file extensions ([f6881b7](https://github.com/zendesk/copenhagen_theme/commit/f6881b72dc9334868c73d2909e14fb7e75105cb1))
+
 ## [4.0.6](https://github.com/zendesk/copenhagen_theme/compare/v4.0.5...v4.0.6) (2024-08-08)
 
 
