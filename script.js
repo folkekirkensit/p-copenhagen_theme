@@ -675,30 +675,29 @@ document.addEventListener('DOMContentLoaded', async function () {
   const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`
 
   // Raw data collected from the endpoint above
-  const data = await (await fetch(url)).json()
+  const response = await fetch(url);
+  const data = await response.json();
 
   // List of articles returned
-  const articles = (data && data.articles) || []
+  const articles = (data && data.articles) || [];
 
   // Handle returned articles
   for (let i = 0; i < articles.length; i++) {
-    const url = articles[i].html_url
-    const title = articles[i].title
-    const aid = articles[i].id
-    if (sessionStorage.getItem(aid) === "closed") {continue}
+    const { html_url, title, id } = article;
+    if (sessionStorage.getItem(id) === "closed") {continue}
     const html = `
       <div class="ns-box ns-bar ns-effect-slidetop ns-type-notice ns-show">
         <div class="ns-box-inner">
           <span class="megaphone"></span>
           <p>
-            <a href="${url}">${title} | Tryk her for at læse mere</a>
+            <a href="${html_url}">${title} | Tryk her for at læse mere</a>
           </p>
         </div>
         <span class="ns-close"></span>
       </div>
     `
     // Append current alert to the alertbox container
-    document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html)
+    document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html);
   }
 })
 
@@ -706,50 +705,38 @@ document.addEventListener('DOMContentLoaded', async function () {
 document.addEventListener('click', function (event) {
   // Close alertbox
   if (event.target.matches('.ns-close')) {
-    event.preventDefault()
-    sessionStorage.setItem(event.target.parentElement.id, "closed")
-    event.target.parentElement.remove()
+    event.preventDefault();
+    sessionStorage.setItem(event.target.parentElement.id, "closed");
+    event.target.parentElement.remove();
   }
-})
+});
 
 // Tilbage til top knap
 if (document.location.pathname.match(/hc\/da\/articles/)) {
   const backToTopButton = document.querySelector("#back-to-top-btn");
 
-  window.addEventListener("scroll", scrollFunction);
+  const scrollFunction = debounce(() => {
+    const shouldShowButton = window.scrollY > 0;
 
-  function scrollFunction() {
-    if (document.location.pathname.match(/hc\/da\/articles/)) {
-      if (window.pageYOffset > -1) { // Show backToTopButton
-        if (!backToTopButton.classList.contains("btnEntrance")) {
-          backToTopButton.classList.remove("btnExit");
-          backToTopButton.classList.add("btnEntrance");
-          backToTopButton.style.display = "block";
-        }
-      } else { // Hide backToTopButton
-        if (backToTopButton.classList.contains("btnEntrance")) {
-          backToTopButton.classList.remove("btnEntrance");
-          backToTopButton.classList.add("btnExit");
-          setTimeout(function () {
-            backToTopButton.style.display = "none";
-          }, 250);
-        }
-      }
+    backToTopButton.classList.toggle("btnEntrance", shouldShowButton);
+    backToTopButton.classList.toggle("btnExit", !shouldShowButton);
+
+    if (shouldShowButton) {
+      backToTopButton.style.display = "block";
+    } else {
+      setTimeout(() => {
+        backToTopButton.style.display = "none";
+      }, 250);
     }
-  }
+  }, 100);
+
+  window.addEventListener("scroll", scrollFunction);
 
   backToTopButton.addEventListener("click", smoothScrollBackToTop);
 }
 
-
-// function backToTop() {
-//   window.scrollTo(0, 0);
-// }
-
 function smoothScrollBackToTop() {
-  const targetPosition = 0;
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
+  const startPosition = window.scrollY;
   const duration = 750;
   let start = null;
 
@@ -758,10 +745,14 @@ function smoothScrollBackToTop() {
   function step(timestamp) {
     if (!start) start = timestamp;
     const progress = timestamp - start;
-    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-    if (progress < duration) window.requestAnimationFrame(step);
+    const distance = -startPosition * (progress / duration);
+    window.scrollTo(0, startPosition + distance);
+    if (progress < duration) {
+      window.requestAnimationFrame(step);
+    }
   }
 }
+
 
 function easeInOutCubic(t, b, c, d) {
   t /= d/2;
@@ -771,24 +762,30 @@ function easeInOutCubic(t, b, c, d) {
 };
 
 // Sotér vedhæftede filer
-
 document.querySelector('ul.attachments').setAttribute('id', 'sortMe');
-
 
 window.onload = function() {
   function sortList(list) {
-    let mylist = list;
+    const mylist = list;
     const listitems = Array.from(mylist.getElementsByTagName("li"));
-    listitems.sort(function(a, b) {
+    listitems.sort((a, b) => {
       const compA = a.textContent.toUpperCase();
       const compB = b.textContent.toUpperCase();
       return (compA < compB) ? -1 : 1;
     });
-    listitems.forEach(function(itm) {
+    listitems.forEach(itm => {
       mylist.appendChild(itm);
     });
   }
 
   sortList(document.querySelector("ul#sortMe"));
 };
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
 
