@@ -663,16 +663,16 @@
   // MW-Notification Banner
 document.addEventListener('DOMContentLoaded', async function () {
   // Article label to be considered for the alerts
-  const label = 'drift'
+  const label = 'drift';
 
   // Get current help center locale
   const locale = document
       .querySelector('html')
       .getAttribute('lang')
-      .toLowerCase()
+      .toLowerCase();
 
   // URL to be called to get the alert data
-  const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`
+  const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`;
 
   // Raw data collected from the endpoint above
   const response = await fetch(url);
@@ -683,8 +683,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   // Handle returned articles
   for (let i = 0; i < articles.length; i++) {
-    const { html_url, title, id } = article;
-    if (sessionStorage.getItem(id) === "closed") {continue}
+    const { html_url, title, id } = articles[i];
+    if (sessionStorage.getItem(id) === "closed") { continue; }
     const html = `
       <div class="ns-box ns-bar ns-effect-slidetop ns-type-notice ns-show">
         <div class="ns-box-inner">
@@ -695,7 +695,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         </div>
         <span class="ns-close"></span>
       </div>
-    `
+    `;
     // Append current alert to the alertbox container
     document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html);
   }
