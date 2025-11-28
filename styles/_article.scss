@@ -84,6 +84,10 @@
     > p:last-child {
       margin-bottom: 0;
     }
+    & img {
+        border-style: solid;
+        border-width: thin;
+    }
   }
 
   &-content {
@@ -190,6 +194,7 @@
       color: $text_color;
       display: block;
       padding: 20px 0;
+      text-decoration: underline;
 
       &:hover,
       &:focus {

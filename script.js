@@ -671,34 +671,32 @@
     }
   });
 
-})();
-
   // MW-Notification Banner
-document.addEventListener('DOMContentLoaded', async function () {
-  // Article label to be considered for the alerts
-  const label = 'drift';
+  document.addEventListener('DOMContentLoaded', async function () {
+    // Article label to be considered for the alerts
+    const label = 'drift';
 
-  // Get current help center locale
-  const locale = document
-      .querySelector('html')
-      .getAttribute('lang')
-      .toLowerCase();
+    // Get current help center locale
+    const locale = document
+        .querySelector('html')
+        .getAttribute('lang')
+        .toLowerCase();
 
-  // URL to be called to get the alert data
-  const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`;
+    // URL to be called to get the alert data
+    const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`;
 
-  // Raw data collected from the endpoint above
-  const response = await fetch(url);
-  const data = await response.json();
+    // Raw data collected from the endpoint above
+    const response = await fetch(url);
+    const data = await response.json();
 
-  // List of articles returned
-  const articles = (data && data.articles) || [];
-
-  // Handle returned articles
-  for (let i = 0; i < articles.length; i++) {
-    const { html_url, title, id } = articles[i];
-    if (sessionStorage.getItem(id) === "closed") { continue; }
-    const html = `
+    // List of articles returned
+    const articles = (data && data.articles) || [];
+    console.log('ingen artiker');
+    // Handle returned articles
+    for (let i = 0; i < articles.length; i++) {
+      const { html_url, title, id } = articles[i];
+      if (sessionStorage.getItem(id) === "closed") { continue; }
+      const html = `
       <div class="ns-box ns-bar ns-effect-slidetop ns-type-notice ns-show">
         <div class="ns-box-inner">
           <span class="megaphone"></span>
@@ -709,96 +707,92 @@ document.addEventListener('DOMContentLoaded', async function () {
         <span class="ns-close"></span>
       </div>
     `;
-    // Append current alert to the alertbox container
-    document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html);
-  }
-})
-
-
-document.addEventListener('click', function (event) {
-  // Close alertbox
-  if (event.target.matches('.ns-close')) {
-    event.preventDefault();
-    sessionStorage.setItem(event.target.parentElement.id, "closed");
-    event.target.parentElement.remove();
-  }
-});
-
-// Tilbage til top knap
-if (document.location.pathname.match(/hc\/da\/articles/)) {
-  const backToTopButton = document.querySelector("#back-to-top-btn");
-
-  const scrollFunction = debounce(() => {
-    const shouldShowButton = window.scrollY > 0;
-
-    backToTopButton.classList.toggle("btnEntrance", shouldShowButton);
-    backToTopButton.classList.toggle("btnExit", !shouldShowButton);
-
-    if (shouldShowButton) {
-      backToTopButton.style.display = "block";
-    } else {
-      setTimeout(() => {
-        backToTopButton.style.display = "none";
-      }, 250);
+      // Append current alert to the alertbox container
+      document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html);
     }
-  }, 100);
+  });
 
-  window.addEventListener("scroll", scrollFunction);
 
-  backToTopButton.addEventListener("click", smoothScrollBackToTop);
-}
+  document.addEventListener('click', function (event) {
+    // Close alertbox
+    if (event.target.matches('.ns-close')) {
+      event.preventDefault();
+      sessionStorage.setItem(event.target.parentElement.id, "closed");
+      event.target.parentElement.remove();
+    }
+  });
 
-function smoothScrollBackToTop() {
-  const startPosition = window.scrollY;
-  const duration = 750;
-  let start = null;
+  // Tilbage til top knap
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!document.location.pathname.match(/hc\/da\/articles/)) return;
 
-  window.requestAnimationFrame(step);
+    const backToTopButton = document.querySelector("#back-to-top-btn");
+    if (!backToTopButton) return;
 
-  function step(timestamp) {
-    if (!start) start = timestamp;
-    const progress = timestamp - start;
-    const distance = -startPosition * (progress / duration);
-    window.scrollTo(0, startPosition + distance);
-    if (progress < duration) {
-      window.requestAnimationFrame(step);
+    const scrollFunction = mydebounce(() => {
+      const shouldShowButton = window.scrollY > 0;
+
+      backToTopButton.classList.toggle("btnEntrance", shouldShowButton);
+      backToTopButton.classList.toggle("btnExit", !shouldShowButton);
+
+      if (shouldShowButton) {
+        backToTopButton.style.display = "block";
+      } else {
+        setTimeout(() => {
+          backToTopButton.style.display = "none";
+        }, 250);
+      }
+    }, 100);
+
+    window.addEventListener("scroll", scrollFunction);
+    backToTopButton.addEventListener("click", smoothScrollBackToTop);
+  });
+
+  function smoothScrollBackToTop() {
+    const startPosition = window.scrollY;
+    const duration = 750;
+    let start = null;
+
+    window.requestAnimationFrame(step);
+
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const distance = -startPosition * (progress / duration);
+      window.scrollTo(0, startPosition + distance);
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
     }
   }
-}
 
-
-function easeInOutCubic(t, b, c, d) {
-  t /= d/2;
-  if (t < 1) return c/2*t*t*t + b;
-  t -= 2;
-  return c/2*(t*t*t + 2) + b;
-};
-
-// Sotér vedhæftede filer
-document.querySelector('ul.attachments').setAttribute('id', 'sortMe');
-
-window.onload = function() {
-  function sortList(list) {
-    const mylist = list;
-    const listitems = Array.from(mylist.getElementsByTagName("li"));
-    listitems.sort((a, b) => {
-      const compA = a.textContent.toUpperCase();
-      const compB = b.textContent.toUpperCase();
-      return (compA < compB) ? -1 : 1;
-    });
-    listitems.forEach(itm => {
-      mylist.appendChild(itm);
-    });
+  function mydebounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
   }
 
-  sortList(document.querySelector("ul#sortMe"));
-};
+  // Sotér vedhæftede filer
+  window.onload = function() {
+      console.log('sorter vedhæftede filer');
+    if (!document.querySelector('ul.attachments')) return;
+    document.querySelector('ul.attachments').setAttribute('id', 'sortMe');
+    function sortList(list) {
+      const mylist = list;
+      const listitems = Array.from(mylist.getElementsByTagName("li"));
+      listitems.sort((a, b) => {
+        const compA = a.textContent.toUpperCase();
+        const compB = b.textContent.toUpperCase();
+        return (compA < compB) ? -1 : 1;
+      });
+      listitems.forEach(itm => {
+        mylist.appendChild(itm);
+      });
+    }
 
-function debounce(func, wait) {
-  let timeout;
-  return function(...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
+    sortList(document.querySelector("ul#sortMe"));
   };
-}
 
+})();

@@ -217,7 +217,7 @@
 
     .meta-data {
       [dir="ltr"] & {
-        @include desktop { margin-left: 20px; }
+        /*@include desktop { margin-left: 20px; }*/
       }
 
       [dir="rtl"] & {
