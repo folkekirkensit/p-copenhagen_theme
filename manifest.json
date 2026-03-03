@@ -1,7 +1,7 @@
 {
   "name": "P-Support",
   "author": "Zendesk",
-  "version": "4.18.0",
+  "version": "4.30.2",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -254,6 +254,12 @@
           "type": "file",
           "description": "community_image_description",
           "label": "community_image_label"
+        },
+        {
+          "identifier": "service_catalog_hero_image",
+          "type": "file",
+          "description": "service_catalog_hero_image_description",
+          "label": "service_catalog_hero_image_label"
         }
       ]
     },
@@ -388,18 +394,6 @@
           "type": "checkbox",
           "description": "follow_topic_description",
           "label": "follow_topic_label",
-          "value": false
-        }
-      ]
-    },
-    {
-      "label": "request_list_group_label",
-      "variables": [
-        {
-          "identifier": "request_list_beta",
-          "type": "checkbox",
-          "description": "request_list_beta_description",
-          "label": "request_list_beta_label",
           "value": false
         }
       ]

@@ -1619,17 +1619,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.14.8, @babel/runtime@npm:^7.24.5":
+  version: 7.28.4
+  resolution: "@babel/runtime@npm:7.28.4"
+  checksum: 10c0/792ce7af9750fb9b93879cc9d1db175701c4689da890e6ced242ea0207c9da411ccf16dc04e689cc01158b28d7898c40d75598f4559109f761c12ce01e959bf7
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.25.0, @babel/runtime@npm:^7.26.10, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.27.1
   resolution: "@babel/runtime@npm:7.27.1"
   checksum: 10c0/530a7332f86ac5a7442250456823a930906911d895c0b743bf1852efc88a20a016ed4cd26d442d0ca40ae6d5448111e02a08dd638a4f1064b47d080e2875dc05
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.24.5":
-  version: 7.28.4
-  resolution: "@babel/runtime@npm:7.28.4"
-  checksum: 10c0/792ce7af9750fb9b93879cc9d1db175701c4689da890e6ced242ea0207c9da411ccf16dc04e689cc01158b28d7898c40d75598f4559109f761c12ce01e959bf7
   languageName: node
   linkType: hard
 
@@ -1727,275 +1727,6 @@ __metadata:
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
   checksum: 10c0/6b80ae4cb3db53f486da2dc63b6e190a74c8c3cca16bb2733f234a0b6a9382b09b146488ae08e2b22cf00f6c83e20f3e040a2f7894f05c045c946d6a090b1d52
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-basic-styles@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-basic-styles@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/cea68cd1a2ede53da405654bcdf6c4f543e3a79206737c382abacbf9d41fc2366b48d3a7ccdbb9ab1950d19090f23719f5e944511c2ac606b98759bc03df3a42
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-block-quote@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-block-quote@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/b49986872cec6b2b0d2ed22d44799b134bd3fa78bcc7580a1d7fffc4741be8eaee9a8f62293c98f2f00fd8871d1c79b1eaa364cb029e7091cdd28dd51b724531
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-clipboard@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-clipboard@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    "@ckeditor/ckeditor5-widget": "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/979ee0a1204edaa8b361c08b93ae630b29be0368e0d8dd50052e7870c83e41cb948aa5b6f314ee43bec32cdf1d4f3406dea435143df0de912342587e397d69bb
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-code-block@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-code-block@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/034ae5b4d0e45c61f6907498d268591f27b7ee6a60beef4f1463cfa0c9af6fb9a2cf8ad189ea3644d2fc196e2f0ec19446824042e980d6e193e0a36bf1235bda
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-core@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-core@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/3b5244673a919e4242995dce9b39850a29e20ab2f051c72e128a02fd539faf4e527369aa1b2e085301f809167fed4b6f5a47e00b600e963973bb82de44698ea8
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-editor-classic@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-editor-classic@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/a8c39531fa160b5159dbddde5f80e3aa4e036c609338fe3d9a52d4dc0a7ca88f074c89be17d37abfacfec94c47fbf6488eade35959896e7832d7403ceb18b439
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-engine@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-engine@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/df2026d0b470d7fba647420bdd1413c9a113fb1b71e555d94bba6fa4756043a5d7a41012fb8bbe2259705f215cf39abbe922244e0af2278704369fc7ea311438
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-enter@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-enter@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-  checksum: 10c0/6fa9121d3a671ed1dc1abbfa94358d23ac81c02db74b454484c124e295fece37ae5a3792ef44e0f808d65b764b17a78c8843fa06d80cb581b09e68ed67f9d6bf
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-essentials@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-essentials@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/e06cf160aadab210cd8a7af7810d426ef95a297ecbdac8e7572d5c4731c4e0194222a8f6d52b9eea3b372af711bd9f7bd283f32cc800e3cc4c130b1da96ebccb
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-heading@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-heading@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/dceaf31b6f6007863c9245a711b86f75e52af74eb30e00a08e97995b3021e45810589aa519ca664825d8543406045f390dee0ebb6aa94cfdb7f0347b35cb13d1
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-image@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-image@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    ckeditor5: "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/1a6a1c270561d40c55fe714736923409abe107a8d4c2fd1614d9ee51829150d46a79b70b6bfca92ef81a22d86bf867f7f4f3216869fa0c4d92b446d22a966d97
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-inspector@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@ckeditor/ckeditor5-inspector@npm:4.1.0"
-  checksum: 10c0/d05a9f2f15ccd477f09d9339a3aa64d22ba6a388869e384ca9aa8ad503e3dfe795744641eeefaa5fc3509078a4a7bcd3eef678f437b1da6ba59f95c1a27860e7
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-link@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-link@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    ckeditor5: "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/7ab32eb30e247c29d5cd627b2909cc89e8eac9af53d962e6e3f3d6759e7fd1e5cf399f3eef9a64ade088c2ed1a0402e5f5e5d1f472eaebcb4a3876efb58da9ed
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-list@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-list@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/bfd720149cb12825d46a1579b602cf35d51f31423d91fdf8438eff06a29b6d2f04cb37e7480376e13c365bdddbad88f6ea5d0ead4e347d7cc85224a93573d165
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-mention@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-mention@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/8abd7cdbf04763c71409bbfe74fed7ff2f33dd45127e7101bbc781d08f300410db7815a6a49d36cea7bf3217c609521831b0cdd5c67c9102eb93564a2fb266cc
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-paragraph@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-paragraph@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-  checksum: 10c0/768ef2d65a2947ffb27146e4b061339e43f39f9cad4db38a3baa98ac4dbcf9c382de6359297c41bc9a58b952cf37f1760f1288259d891754bfc73b7668382bbb
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-paste-from-office@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-paste-from-office@npm:41.3.0"
-  dependencies:
-    ckeditor5: "npm:41.3.0"
-  checksum: 10c0/6a5f941820cabb3d0202ff2c6457b617cd62fe4ed39f86d739002e949cae1a5cf30ac6b3cb4d96871117ffff44ba14502b8d0f6644d191a7fe9ff5a9091ec80c
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-select-all@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-select-all@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-  checksum: 10c0/9b6e6a70372f6fb46d965b53e25b7f37dc8b154396a6764e0cb711b16cbf9fbe6c8e86b7de4c102f0f1e7701f194bab4b05c16068151f1bb82867ec3a907d5c4
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-theme-lark@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-theme-lark@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-  checksum: 10c0/66b63a9c6b89b96f97a3e244a41cfa2fa17ada07043ba51901d917f4262bac078ec1ef946f878dbe7251da78bc3f84acb85a6851551282ec7eb64ba7fb80b093
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-typing@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-typing@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/128450df5541169e348bd78309abec46fb64d10f673d5c71eccb80c6cb498cd4c06e3423511eb8efacf88a7d345ddda96cf867783d3884d2699c8f0abd0f91c1
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-ui@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-ui@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    color-convert: "npm:2.0.1"
-    color-parse: "npm:1.4.2"
-    lodash-es: "npm:4.17.21"
-    vanilla-colorful: "npm:0.7.2"
-  checksum: 10c0/e37bb2fc1f47feea1cf19c95d3a154653032603ca881bc02b1b4cb662df6a38a13eea073e3f1f51a34875c3783892d9a56223750da6c8102c1bb3836f59ac462
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-undo@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-undo@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-  checksum: 10c0/ec11590def3d0c27937479fa33303eabb59c8552d489b33d67f8fde2984e7f9d2cea754aed7575b0b7394a36a0384825f9c299e9bea74937d6dbea955cdd65af
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-upload@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-upload@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-  checksum: 10c0/51499c2be6374f398a9be0aff527120c2e2de6fe26cb8a85092d67cf2ab244e112501b26a36b637b4ff2b9d21abc2d5ead39062ba03647a615a1def8b4106310
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-utils@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-utils@npm:41.3.0"
-  dependencies:
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/779efdcf84109e08f7c42df68813318ffdb86b4b899172e54c0495ce917e1d95306061d20bb6ea32d6e7a12eb3c8bb4ab43c3e5ed020a63dc0b1776ad4515a1f
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-watchdog@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-watchdog@npm:41.3.0"
-  dependencies:
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/3e4e6d785d32ca1e7ea8f4adfb1c9a2b7756e4bbe78563d866dce4523e12216490cbb453df6c243fe4e5fd5515847a4ba56d0d5d7ab744805a438ae9fd7d7371
-  languageName: node
-  linkType: hard
-
-"@ckeditor/ckeditor5-widget@npm:41.3.0":
-  version: 41.3.0
-  resolution: "@ckeditor/ckeditor5-widget@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-enter": "npm:41.3.0"
-    "@ckeditor/ckeditor5-typing": "npm:41.3.0"
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    lodash-es: "npm:4.17.21"
-  checksum: 10c0/6ac851d38bc89145a5a8ac5818b6369d094cce8fddf2d5720d40dd328c4140ae88eb438083d8b0ec072f53fdc52421c606948466a657ccd300bb3945f21fceee
   languageName: node
   linkType: hard
 
@@ -2602,6 +2333,19 @@ __metadata:
   version: 1.2.1
   resolution: "@humanwhocodes/object-schema@npm:1.2.1"
   checksum: 10c0/c3c35fdb70c04a569278351c75553e293ae339684ed75895edc79facc7276e351115786946658d78133130c0cca80e57e2203bc07f8fa7fe7980300e8deef7db
+  languageName: node
+  linkType: hard
+
+"@hypnosphi/create-react-context@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@hypnosphi/create-react-context@npm:0.3.1"
+  dependencies:
+    gud: "npm:^1.0.0"
+    warning: "npm:^4.0.3"
+  peerDependencies:
+    prop-types: ^15.0.0
+    react: ">=0.14.0"
+  checksum: 10c0/e8072221f9f9c2c47c3ebc5bc6079f9a71938e181d2b4aa3e1d3922707bc097336d5260dad088cf47c1d6e1ff34839fa21f2505a95bddda0d7548c5a955b5691
   languageName: node
   linkType: hard
 
@@ -5074,42 +4818,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zendesk/help-center-wysiwyg@npm:0.1.0":
-  version: 0.1.0
-  resolution: "@zendesk/help-center-wysiwyg@npm:0.1.0"
-  dependencies:
-    "@ckeditor/ckeditor5-basic-styles": "npm:41.3.0"
-    "@ckeditor/ckeditor5-block-quote": "npm:41.3.0"
-    "@ckeditor/ckeditor5-code-block": "npm:41.3.0"
-    "@ckeditor/ckeditor5-editor-classic": "npm:41.3.0"
-    "@ckeditor/ckeditor5-essentials": "npm:41.3.0"
-    "@ckeditor/ckeditor5-heading": "npm:41.3.0"
-    "@ckeditor/ckeditor5-image": "npm:41.3.0"
-    "@ckeditor/ckeditor5-inspector": "npm:4.1.0"
-    "@ckeditor/ckeditor5-link": "npm:41.3.0"
-    "@ckeditor/ckeditor5-list": "npm:41.3.0"
-    "@ckeditor/ckeditor5-mention": "npm:41.3.0"
-    "@ckeditor/ckeditor5-paragraph": "npm:41.3.0"
-    "@ckeditor/ckeditor5-paste-from-office": "npm:41.3.0"
-    "@ckeditor/ckeditor5-theme-lark": "npm:41.3.0"
-    "@ckeditor/ckeditor5-typing": "npm:41.3.0"
-    "@zendeskgarden/css-variables": "npm:6.4.6"
-    "@zendeskgarden/svg-icons": "npm:7.0.0"
-    lodash.debounce: "npm:4.0.8"
-  checksum: 10c0/34f6ea93b422b688e7676b69f19a6a52374f18a85ed27a6042198a3aec16858294f38e6475787be744eb02a90ecde8f4151d620b1130fb97debbc901897228f3
+"@zendesk/help-center-wysiwyg@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@zendesk/help-center-wysiwyg@npm:1.0.1"
+  checksum: 10c0/a74111e9570568536a63bfb06c81385b8a8721441535f4aabdb162a2371c338f87ddc0d88886360acedd58ed5596d6d637047ff97f1fafb0bdc00b260099c3e7
   languageName: node
   linkType: hard
 
 "@zendesk/zcli-apps@npm:^1.0.0-beta.50":
-  version: 1.0.0-beta.50
-  resolution: "@zendesk/zcli-apps@npm:1.0.0-beta.50"
+  version: 1.0.0-beta.54
+  resolution: "@zendesk/zcli-apps@npm:1.0.0-beta.54"
   dependencies:
     adm-zip: "npm:0.5.10"
     archiver: "npm:^5.3.1"
     axios: "npm:^1.7.5"
     chalk: "npm:^4.1.2"
     cors: "npm:^2.8.5"
-    express: "npm:^4.17.1"
+    express: "npm:^4.21.2"
     form-data: "npm:^4.0.0"
     fs-extra: "npm:^10.0.0"
     morgan: "npm:^1.10.0"
@@ -5119,7 +4844,7 @@ __metadata:
     uuid: "npm:^8.3.2"
   bin:
     zcli-apps: bin/run
-  checksum: 10c0/00b6f7698e62ab14b48b43395801bd7c8eee793b17100200f0e91e543f7bf175254abae8eded3db76a06df16b24d3a22bf8cc792e35b91a9cd13a3981f865dff
+  checksum: 10c0/6b432902b070e997108d948ad9cbdbe81ccb72a8b1fbe7ebd1afd0bf0f87ddfdd63180cc25c78fb46cd476bd851bcf7e4dce4d7f8a827f3b5d6edf21dbc6668c
   languageName: node
   linkType: hard
 
@@ -5140,8 +4865,8 @@ __metadata:
   linkType: hard
 
 "@zendesk/zcli-themes@npm:^1.0.0-beta.52":
-  version: 1.0.0-beta.52
-  resolution: "@zendesk/zcli-themes@npm:1.0.0-beta.52"
+  version: 1.0.0-beta.53
+  resolution: "@zendesk/zcli-themes@npm:1.0.0-beta.53"
   dependencies:
     "@types/inquirer": "npm:^8.0.0"
     "@types/ws": "npm:^8.5.4"
@@ -5149,14 +4874,14 @@ __metadata:
     chalk: "npm:^4.1.2"
     chokidar: "npm:^3.5.3"
     cors: "npm:^2.8.5"
-    express: "npm:^4.17.1"
+    express: "npm:^4.21.2"
     glob: "npm:^10.1.0"
     inquirer: "npm:^8.0.0"
     sass: "npm:1.60.0"
     ws: "npm:^8.13.0"
   bin:
     zcli-themes: bin/run
-  checksum: 10c0/de20464ac655caef67e2d8dd05775ab48d7e934be12d39b6a78b41ade76eb2c9d954e3c3a20a314b604d5d7d247e48e3f6f9a7499dd5a70f4056f282cc15a6d9
+  checksum: 10c0/40fdcf4564d732ae51b8e96b0d566f860c297ea66a93eda841f7040e16494dab98cb4baa143d38b03d250e7c48b9a758076b51e636d214e1bca80628be89516b
   languageName: node
   linkType: hard
 
@@ -5181,16 +4906,16 @@ __metadata:
   linkType: hard
 
 "@zendeskgarden/container-accordion@npm:^3.0.0":
-  version: 3.0.4
-  resolution: "@zendeskgarden/container-accordion@npm:3.0.4"
+  version: 3.0.13
+  resolution: "@zendeskgarden/container-accordion@npm:3.0.13"
   dependencies:
     "@babel/runtime": "npm:^7.8.4"
-    "@zendeskgarden/container-utilities": "npm:^1.0.12"
+    "@zendeskgarden/container-utilities": "npm:^2.0.3"
   peerDependencies:
     prop-types: ^15.6.1
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 10c0/5898b93b81ab90b3f17d07c7bc81e738bcbd1bbe5413e46c5400ee8558199df488f043b54b89d6b308a435ae04a245a138d20e3846a1634c1118f59cf2809640
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/8de186b5769359a56d74ce15fbee5247c9aaf9abb388ad7088e91e94c78b2f73facfab28ee6a541b04068f51f7b4bd2334b6eccb8c430cddf5e91d10f3ceee8d
   languageName: node
   linkType: hard
 
@@ -5338,6 +5063,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zendeskgarden/container-selection@npm:^2.0.0":
+  version: 2.0.6
+  resolution: "@zendeskgarden/container-selection@npm:2.0.6"
+  dependencies:
+    "@babel/runtime": "npm:^7.8.4"
+    "@zendeskgarden/container-utilities": "npm:^1.0.6"
+  peerDependencies:
+    prop-types: ^15.6.1
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 10c0/988e68f0169748c082727c38344749e42f8b332ba35de5297bceac4ee0f87abcbd34e6d1cccd50b4656191a8f2b2e18198c580b2d91460e0222f75e925fa0156
+  languageName: node
+  linkType: hard
+
 "@zendeskgarden/container-selection@npm:^3.1.3":
   version: 3.1.3
   resolution: "@zendeskgarden/container-selection@npm:3.1.3"
@@ -5349,6 +5088,20 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/e0f279e8665640e9013c09163280f7bcba30857e91feb2517165b982483314720e8ab99a4b4427bc89b8a3b45c51dd7c5014b1d591029f6a8cc0218491bee705
+  languageName: node
+  linkType: hard
+
+"@zendeskgarden/container-selection@npm:^3.1.5":
+  version: 3.1.5
+  resolution: "@zendeskgarden/container-selection@npm:3.1.5"
+  dependencies:
+    "@babel/runtime": "npm:^7.8.4"
+    "@zendeskgarden/container-utilities": "npm:^2.0.5"
+  peerDependencies:
+    prop-types: ^15.6.1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/c91589f516f5f1f1b094d16a00ac92e1f959acb2c6509a396b30b9892401ee9ba9afffa87e22149bdb25e14324b9f20fe7700042efe446425e3e1fa0eead34cb
   languageName: node
   linkType: hard
 
@@ -5366,6 +5119,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zendeskgarden/container-tabs@npm:^2.0.10":
+  version: 2.0.17
+  resolution: "@zendeskgarden/container-tabs@npm:2.0.17"
+  dependencies:
+    "@babel/runtime": "npm:^7.8.4"
+    "@zendeskgarden/container-selection": "npm:^3.1.5"
+    "@zendeskgarden/container-utilities": "npm:^2.0.5"
+  peerDependencies:
+    prop-types: ^15.6.1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/753c02255051e1dd0d5d4300f44ac6d969a4810d5fdec16c58d80fb503253d34006c1f6f2448f6a70d4a9db54aa75f7b6bda7b179599b4d5028fb4a2e894454d
+  languageName: node
+  linkType: hard
+
 "@zendeskgarden/container-tooltip@npm:^2.1.0":
   version: 2.1.1
   resolution: "@zendeskgarden/container-tooltip@npm:2.1.1"
@@ -5380,62 +5148,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zendeskgarden/container-utilities@npm:^1.0.12":
-  version: 1.0.12
-  resolution: "@zendeskgarden/container-utilities@npm:1.0.12"
+"@zendeskgarden/container-utilities@npm:^1.0.14, @zendeskgarden/container-utilities@npm:^1.0.6":
+  version: 1.0.14
+  resolution: "@zendeskgarden/container-utilities@npm:1.0.14"
   dependencies:
     "@babel/runtime": "npm:^7.8.4"
     "@reach/auto-id": "npm:^0.18.0"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 10c0/a26837e187ad2b56666b65026f84e86ee429ae22d0f3041529ebac21605823041b95650f0ce428b571ce4c80fe4d0a874fd825b2d6bff1bb125c9dfc9cabecef
+  checksum: 10c0/9d30b274496ea77d06d4823cd35772f370ade8f7fcf1dc76e5d7ac0968b3dbb73b5667b2efba6145e46d2bc34f66add7892e5a39403fa0ef8f67facb2bce00f0
   languageName: node
   linkType: hard
 
-"@zendeskgarden/container-utilities@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@zendeskgarden/container-utilities@npm:2.0.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.8.4"
-    "@reach/auto-id": "npm:^0.18.0"
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 10c0/4bfd3485107e823263278dc7d5449ce28c636198abd8fe920b737f5e68700c15ef6d011bde377a7750a6eb193d78a36d953945571e10e759028215b6596ac262
-  languageName: node
-  linkType: hard
-
-"@zendeskgarden/container-utilities@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@zendeskgarden/container-utilities@npm:2.0.2"
+"@zendeskgarden/container-utilities@npm:^2.0.0, @zendeskgarden/container-utilities@npm:^2.0.2, @zendeskgarden/container-utilities@npm:^2.0.3, @zendeskgarden/container-utilities@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@zendeskgarden/container-utilities@npm:2.0.5"
   dependencies:
     "@babel/runtime": "npm:^7.8.4"
     "@reach/auto-id": "npm:^0.18.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/54fa8d3ada8da2704f7f500589024f6fc56e361a22b12b69ea502f018a9f61c067951214d4e664fdfba817a5262c90ab0d04544cbe743b5c80a3d5f43eb3b6bb
-  languageName: node
-  linkType: hard
-
-"@zendeskgarden/container-utilities@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@zendeskgarden/container-utilities@npm:2.0.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.8.4"
-    "@reach/auto-id": "npm:^0.18.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/fbfe8b2b05a6fab07bec8c84b98f9a7896419a622a03c8b6be21792cce5b6c197315a16460fdd520bd0d1fe10b9978b8e67c2376d44ab1786f19e8202f95caf7
-  languageName: node
-  linkType: hard
-
-"@zendeskgarden/css-variables@npm:6.4.6":
-  version: 6.4.6
-  resolution: "@zendeskgarden/css-variables@npm:6.4.6"
-  checksum: 10c0/cb5ab84e1d4a102661fe12523d7c6aa611af6b80015402273fac7696c57d74870c5e7ee50c975d8dbf97469902d089590358ddb0042dc826d395c399c9dc46d8
+  checksum: 10c0/110e2faddd3610dcd774a29762d86e845f045fc5dff0b44c7f32164f54096ba78ce1e4c70b913cf45bb91dea5755c56952c519a45e10de846c956726f7324992
   languageName: node
   linkType: hard
 
@@ -5520,6 +5255,27 @@ __metadata:
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     styled-components: ^5.3.1 || ^6.0.0
   checksum: 10c0/ee97183cd1580998bc11b0140bd8a69c052264482f2495aae3c110e23ac089ea4a06d33f07da409cda7f8b8471669fb2a6e2394c11f9ea61fca8557e0ba870f7
+  languageName: node
+  linkType: hard
+
+"@zendeskgarden/react-dropdowns.legacy@npm:9.12.0":
+  version: 9.12.0
+  resolution: "@zendeskgarden/react-dropdowns.legacy@npm:9.12.0"
+  dependencies:
+    "@zendeskgarden/container-selection": "npm:^2.0.0"
+    "@zendeskgarden/container-utilities": "npm:^1.0.14"
+    "@zendeskgarden/react-forms": "npm:^9.12.0"
+    downshift: "npm:^7.0.0"
+    polished: "npm:^4.3.1"
+    prop-types: "npm:^15.5.7"
+    react-merge-refs: "npm:^2.0.0"
+    react-popper: "npm:^1.3.4"
+  peerDependencies:
+    "@zendeskgarden/react-theming": ">=9.0.0"
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    styled-components: ^5.3.1 || ^6.0.0
+  checksum: 10c0/4efa210e8e579c0c44f60ff3e7fabb7fff24202e0dab961c8fc5112b92c2096631b8801d931238a9962334fa47eb085f72e95e468c0eafafde3c0df4fc2797f5
   languageName: node
   linkType: hard
 
@@ -5676,6 +5432,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zendeskgarden/react-tabs@npm:9.12.0":
+  version: 9.12.0
+  resolution: "@zendeskgarden/react-tabs@npm:9.12.0"
+  dependencies:
+    "@zendeskgarden/container-tabs": "npm:^2.0.10"
+    "@zendeskgarden/container-utilities": "npm:^2.0.0"
+    polished: "npm:^4.3.1"
+    prop-types: "npm:^15.5.7"
+    react-merge-refs: "npm:^2.0.0"
+  peerDependencies:
+    "@zendeskgarden/react-theming": ">=9.0.0"
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    styled-components: ^5.3.1 || ^6.0.0
+  checksum: 10c0/c83cfd06209f9b35a0d82af77846d6d0aa93bf37bc0b023d539fb14406b8c55950645522e6f6a737f4b398e0522fbaff7d98926f1339c9f0069f5c3b4625ccb4
+  languageName: node
+  linkType: hard
+
 "@zendeskgarden/react-tags@npm:9.12.0, @zendeskgarden/react-tags@npm:^9.12.0":
   version: 9.12.0
   resolution: "@zendeskgarden/react-tags@npm:9.12.0"
@@ -5743,13 +5517,6 @@ __metadata:
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     styled-components: ^5.3.1 || ^6.0.0
   checksum: 10c0/d7bca35904eaa797a61bfb150fc8af2e0959976b2c7b11d136e4feabcc7b68c586f6bf9dffcb4fe586c2d7aaaeb262caa815bb3cecba814760413fb24a676853
-  languageName: node
-  linkType: hard
-
-"@zendeskgarden/svg-icons@npm:7.0.0":
-  version: 7.0.0
-  resolution: "@zendeskgarden/svg-icons@npm:7.0.0"
-  checksum: 10c0/eb336055e380323bf419f572ec39331e8b1c453acebdf93ccc8219df63cfafa567323137c3a52697710df28174693c69e70e3d7f09869d5978f0ffd03db34958
   languageName: node
   linkType: hard
 
@@ -7022,7 +6789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"call-bind-apply-helpers@npm:^1.0.1, call-bind-apply-helpers@npm:^1.0.2":
+"call-bind-apply-helpers@npm:^1.0.0, call-bind-apply-helpers@npm:^1.0.1, call-bind-apply-helpers@npm:^1.0.2":
   version: 1.0.2
   resolution: "call-bind-apply-helpers@npm:1.0.2"
   dependencies:
@@ -7052,6 +6819,18 @@ __metadata:
     get-intrinsic: "npm:^1.2.4"
     set-function-length: "npm:^1.2.1"
   checksum: 10c0/a3ded2e423b8e2a265983dba81c27e125b48eefb2655e7dfab6be597088da3d47c47976c24bc51b8fd9af1061f8f87b4ab78a314f3c77784b2ae2ba535ad8b8d
+  languageName: node
+  linkType: hard
+
+"call-bind@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "call-bind@npm:1.0.8"
+  dependencies:
+    call-bind-apply-helpers: "npm:^1.0.0"
+    es-define-property: "npm:^1.0.0"
+    get-intrinsic: "npm:^1.2.4"
+    set-function-length: "npm:^1.2.2"
+  checksum: 10c0/a13819be0681d915144467741b69875ae5f4eba8961eb0bf322aab63ec87f8250eb6d6b0dcbb2e1349876412a56129ca338592b3829ef4343527f5f18a0752d4
   languageName: node
   linkType: hard
 
@@ -7335,27 +7114,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ckeditor5@npm:41.3.0":
-  version: 41.3.0
-  resolution: "ckeditor5@npm:41.3.0"
-  dependencies:
-    "@ckeditor/ckeditor5-clipboard": "npm:41.3.0"
-    "@ckeditor/ckeditor5-core": "npm:41.3.0"
-    "@ckeditor/ckeditor5-engine": "npm:41.3.0"
-    "@ckeditor/ckeditor5-enter": "npm:41.3.0"
-    "@ckeditor/ckeditor5-paragraph": "npm:41.3.0"
-    "@ckeditor/ckeditor5-select-all": "npm:41.3.0"
-    "@ckeditor/ckeditor5-typing": "npm:41.3.0"
-    "@ckeditor/ckeditor5-ui": "npm:41.3.0"
-    "@ckeditor/ckeditor5-undo": "npm:41.3.0"
-    "@ckeditor/ckeditor5-upload": "npm:41.3.0"
-    "@ckeditor/ckeditor5-utils": "npm:41.3.0"
-    "@ckeditor/ckeditor5-watchdog": "npm:41.3.0"
-    "@ckeditor/ckeditor5-widget": "npm:41.3.0"
-  checksum: 10c0/af91f852c2d10d3db2ccf750799c937403d430ddadcae9df3e42ebb42b9b5df25bd582ad77f36e580a2fb76dc40e7eba257049f7d341665524337ee83de826d8
-  languageName: node
-  linkType: hard
-
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -7493,21 +7251,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-convert@npm:2.0.1, color-convert@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "color-convert@npm:2.0.1"
-  dependencies:
-    color-name: "npm:~1.1.4"
-  checksum: 10c0/37e1150172f2e311fe1b2df62c6293a342ee7380da7b9cfdba67ea539909afbd74da27033208d01d6d5cfc65ee7868a22e18d7e7648e004425441c0f8a15a7d7
-  languageName: node
-  linkType: hard
-
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
   dependencies:
     color-name: "npm:1.1.3"
   checksum: 10c0/5ad3c534949a8c68fca8fbc6f09068f435f0ad290ab8b2f76841b9e6af7e0bb57b98cb05b0e19fe33f5d91e5a8611ad457e5f69e0a484caad1f7487fd0e8253c
+  languageName: node
+  linkType: hard
+
+"color-convert@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "color-convert@npm:2.0.1"
+  dependencies:
+    color-name: "npm:~1.1.4"
+  checksum: 10c0/37e1150172f2e311fe1b2df62c6293a342ee7380da7b9cfdba67ea539909afbd74da27033208d01d6d5cfc65ee7868a22e18d7e7648e004425441c0f8a15a7d7
   languageName: node
   linkType: hard
 
@@ -7518,19 +7276,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-name@npm:^1.0.0, color-name@npm:~1.1.4":
+"color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: 10c0/a1a3f914156960902f46f7f56bc62effc6c94e84b2cae157a526b1c1f74b677a47ec602bf68a61abfa2b42d15b7c5651c6dbe72a43af720bc588dff885b10f95
-  languageName: node
-  linkType: hard
-
-"color-parse@npm:1.4.2":
-  version: 1.4.2
-  resolution: "color-parse@npm:1.4.2"
-  dependencies:
-    color-name: "npm:^1.0.0"
-  checksum: 10c0/911e47271d6362f6535779c3b5cfddbdc1ca2160e253de83e36784bb223c0c41cf11c382fa4b1cb766fcb313bd891f51c24d0ff0a7afee3a92aa0daf792ac4ff
   languageName: node
   linkType: hard
 
@@ -7637,6 +7386,13 @@ __metadata:
     normalize-path: "npm:^3.0.0"
     readable-stream: "npm:^3.6.0"
   checksum: 10c0/784ef2964cdce04fb6e91e3a4b8e2565db2024141259e8f843675ef556662b90a1d65aeaabe703f88d2eb0291fa4ed10a674a6c28f93b5fb37e569aad1b374fe
+  languageName: node
+  linkType: hard
+
+"compute-scroll-into-view@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "compute-scroll-into-view@npm:2.0.4"
+  checksum: 10c0/397ef7c1f2d48692bc31ddae77c621ec74caeae9c7d4fa2b955f68d036d27c52382f393a2d5cf9ced4d31847cdb0dd810addbe7d6ab51d5d854bbd294abb82a0
   languageName: node
   linkType: hard
 
@@ -7886,7 +7642,7 @@ __metadata:
     "@types/styled-components": "npm:^5.1.26"
     "@typescript-eslint/eslint-plugin": "npm:^6.1.0"
     "@typescript-eslint/parser": "npm:^6.1.0"
-    "@zendesk/help-center-wysiwyg": "npm:0.1.0"
+    "@zendesk/help-center-wysiwyg": "npm:1.0.1"
     "@zendesk/zcli": "npm:1.0.0-beta.52"
     "@zendeskgarden/container-grid": "npm:^3.0.14"
     "@zendeskgarden/container-utilities": "npm:^2.0.2"
@@ -7896,6 +7652,7 @@ __metadata:
     "@zendeskgarden/react-buttons": "npm:9.12.0"
     "@zendeskgarden/react-datepickers": "npm:9.12.0"
     "@zendeskgarden/react-dropdowns": "npm:9.12.0"
+    "@zendeskgarden/react-dropdowns.legacy": "npm:9.12.0"
     "@zendeskgarden/react-forms": "npm:9.12.0"
     "@zendeskgarden/react-grid": "npm:9.12.0"
     "@zendeskgarden/react-loaders": "npm:9.12.0"
@@ -7903,6 +7660,7 @@ __metadata:
     "@zendeskgarden/react-notifications": "npm:9.12.0"
     "@zendeskgarden/react-pagination": "npm:9.12.0"
     "@zendeskgarden/react-tables": "npm:9.12.0"
+    "@zendeskgarden/react-tabs": "npm:9.12.0"
     "@zendeskgarden/react-tags": "npm:9.12.0"
     "@zendeskgarden/react-theming": "npm:9.12.0"
     "@zendeskgarden/react-tooltips": "npm:9.12.0"
@@ -7928,6 +7686,8 @@ __metadata:
     jest-environment-jsdom: "npm:^29.6.1"
     js-yaml: "npm:^4.1.0"
     lighthouse: "npm:12.6.0"
+    linkify-string: "npm:^4.3.2"
+    linkifyjs: "npm:^4.3.2"
     lodash.debounce: "npm:^4.0.8"
     node-fetch: "npm:2.6.9"
     prettier: "npm:2.8.4"
@@ -8402,6 +8162,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deep-equal@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "deep-equal@npm:1.1.2"
+  dependencies:
+    is-arguments: "npm:^1.1.1"
+    is-date-object: "npm:^1.0.5"
+    is-regex: "npm:^1.1.4"
+    object-is: "npm:^1.1.5"
+    object-keys: "npm:^1.1.1"
+    regexp.prototype.flags: "npm:^1.5.1"
+  checksum: 10c0/cd85d822d18e9b3e1532d0f6ba412d229aa9d22881d70da161674428ae96e47925191296f7cda29306bac252889007da40ed8449363bd1c96c708acb82068a00
+  languageName: node
+  linkType: hard
+
 "deep-equal@npm:^2.0.5":
   version: 2.2.2
   resolution: "deep-equal@npm:2.2.2"
@@ -8762,6 +8536,21 @@ __metadata:
   version: 16.0.3
   resolution: "dotenv@npm:16.0.3"
   checksum: 10c0/109457ac5f9e930ca8066ea33887b6f839ab24d647a7a8b49ddcd1f32662e2c35591c5e5b9819063e430148a664d0927f0cbe60cf9575d89bc524f47ff7e78f0
+  languageName: node
+  linkType: hard
+
+"downshift@npm:^7.0.0":
+  version: 7.6.2
+  resolution: "downshift@npm:7.6.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.14.8"
+    compute-scroll-into-view: "npm:^2.0.4"
+    prop-types: "npm:^15.7.2"
+    react-is: "npm:^17.0.2"
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    react: ">=16.12.0"
+  checksum: 10c0/aa44b337599fa45d10085749a97aaaad2b48f727ffdebee22d0e8b29141480966294a4ee8ddfbc111a05b84a24e3508cbe685ac08837948bbfff796288ac377d
   languageName: node
   linkType: hard
 
@@ -10005,7 +9794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.17.1":
+"express@npm:^4.21.2":
   version: 4.21.2
   resolution: "express@npm:4.21.2"
   dependencies:
@@ -10968,6 +10757,13 @@ __metadata:
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
   checksum: 10c0/e951259d8cd2e0d196c72ec711add7115d42eb9a8146c8eeda5b8d3ac91e5dd816b9cd68920726d9fd4490368e7ed86e9c423f40db87e2d8dfafa00fa17c3a31
+  languageName: node
+  linkType: hard
+
+"gud@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "gud@npm:1.0.0"
+  checksum: 10c0/a4db6edc18e2c4e3a22dc9e639e40a4e5650d53dae9cf384a96d5380dfa17ddda376cf6b7797a5c30d140d2532e5a69d167bdb70c2c151dd673253bac6b027f3
   languageName: node
   linkType: hard
 
@@ -13377,6 +13173,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"linkify-string@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "linkify-string@npm:4.3.2"
+  peerDependencies:
+    linkifyjs: ^4.0.0
+  checksum: 10c0/674e908b46aa6da3ee7e5c0749464d8de55f4d44933d7e9dea4d2f9bb5af0137d45142494288cd120335e21d8298c76ec4524ab6e67edede4613adb5f17f7dc6
+  languageName: node
+  linkType: hard
+
+"linkifyjs@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "linkifyjs@npm:4.3.2"
+  checksum: 10c0/1a85e6b368304a4417567fe5e38651681e3e82465590836942d1b4f3c834cc35532898eb1e2479f6337d9144b297d418eb708b6be8ed0b3dc3954a3588e07971
+  languageName: node
+  linkType: hard
+
 "load-json-file@npm:^4.0.0":
   version: 4.0.0
   resolution: "load-json-file@npm:4.0.0"
@@ -13439,7 +13251,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash-es@npm:4.17.21, lodash-es@npm:^4.17.21":
+"lodash-es@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash-es@npm:4.17.21"
   checksum: 10c0/fb407355f7e6cd523a9383e76e6b455321f0f153a6c9625e21a8827d10c54c2a2341bd2ae8d034358b60e07325e1330c14c224ff582d04612a46a4f0479ff2f2
@@ -13460,7 +13272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.debounce@npm:4.0.8, lodash.debounce@npm:^4.0.8":
+"lodash.debounce@npm:^4.0.8":
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
   checksum: 10c0/762998a63e095412b6099b8290903e0a8ddcb353ac6e2e0f2d7e7d03abd4275fe3c689d88960eb90b0dde4f177554d51a690f22a343932ecbc50a5d111849987
@@ -13640,7 +13452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.0.0, loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -15582,6 +15394,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"popper.js@npm:^1.14.4":
+  version: 1.16.1
+  resolution: "popper.js@npm:1.16.1"
+  checksum: 10c0/1c1a826f757edb5b8c2049dfd7a9febf6ae1e9d0e51342fc715b49a0c1020fced250d26484619883651e097c5764bbcacd2f31496e3646027f079dd83e072681
+  languageName: node
+  linkType: hard
+
 "possible-typed-array-names@npm:^1.0.0":
   version: 1.0.0
   resolution: "possible-typed-array-names@npm:1.0.0"
@@ -15769,7 +15588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.7, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.7, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -16070,6 +15889,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-popper@npm:^1.3.4":
+  version: 1.3.11
+  resolution: "react-popper@npm:1.3.11"
+  dependencies:
+    "@babel/runtime": "npm:^7.1.2"
+    "@hypnosphi/create-react-context": "npm:^0.3.1"
+    deep-equal: "npm:^1.1.1"
+    popper.js: "npm:^1.14.4"
+    prop-types: "npm:^15.6.1"
+    typed-styles: "npm:^0.0.7"
+    warning: "npm:^4.0.2"
+  peerDependencies:
+    react: 0.14.x || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: 10c0/d5dd1d0d4b5a3407134681b42a079fce525c94bce892ad177515d54a8cf64203eecbc30231476367e916aaff91221f5b6abd5afc207a86c698f35b7254178488
+  languageName: node
+  linkType: hard
+
 "react-transition-group@npm:^4.4.2":
   version: 4.4.5
   resolution: "react-transition-group@npm:4.4.5"
@@ -16308,6 +16144,20 @@ __metadata:
     define-properties: "npm:^1.2.0"
     functions-have-names: "npm:^1.2.3"
   checksum: 10c0/312b7966c5cd2e6837da4073e0e6450191e3c6e8f07276cbed35e170ea5606f91487b435eb3290593f8aed39b1191c44f5340e6e5392650feaf2b34a98378464
+  languageName: node
+  linkType: hard
+
+"regexp.prototype.flags@npm:^1.5.1":
+  version: 1.5.4
+  resolution: "regexp.prototype.flags@npm:1.5.4"
+  dependencies:
+    call-bind: "npm:^1.0.8"
+    define-properties: "npm:^1.2.1"
+    es-errors: "npm:^1.3.0"
+    get-proto: "npm:^1.0.1"
+    gopd: "npm:^1.2.0"
+    set-function-name: "npm:^2.0.2"
+  checksum: 10c0/83b88e6115b4af1c537f8dabf5c3744032cb875d63bc05c288b1b8c0ef37cbe55353f95d8ca817e8843806e3e150b118bc624e4279b24b4776b4198232735a77
   languageName: node
   linkType: hard
 
@@ -16998,7 +16848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"set-function-length@npm:^1.2.1":
+"set-function-length@npm:^1.2.1, set-function-length@npm:^1.2.2":
   version: 1.2.2
   resolution: "set-function-length@npm:1.2.2"
   dependencies:
@@ -18249,7 +18099,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.8.0":
+"tslib@npm:^2.0.1, tslib@npm:^2.3.0, tslib@npm:^2.8.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
@@ -18461,6 +18311,13 @@ __metadata:
   version: 2.12.0
   resolution: "typed-query-selector@npm:2.12.0"
   checksum: 10c0/069509887ecfff824a470f5f93d300cc9223cb059a36c47ac685f2812c4c9470340e07615893765e4264cef1678507532fa78f642fd52f276b589f7f5d791f79
+  languageName: node
+  linkType: hard
+
+"typed-styles@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "typed-styles@npm:0.0.7"
+  checksum: 10c0/ec159f0e538364750cf9b8f19136375df64ad364fda355e6f7a7216ebffc67f18b436722c5c6853c89f70e6507eb69e5061ceb9334fa1f54902c0f6be1b985fe
   languageName: node
   linkType: hard
 
@@ -18838,13 +18695,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vanilla-colorful@npm:0.7.2":
-  version: 0.7.2
-  resolution: "vanilla-colorful@npm:0.7.2"
-  checksum: 10c0/53e759ffaf2608e41d85f0f2a06b5e7745773365702363fc83f743c43a6eec11feb78c9a6e680d59983d66e278eb81a43b3230b81a288f5d73512c62597251be
-  languageName: node
-  linkType: hard
-
 "vary@npm:^1, vary@npm:~1.1.2":
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
@@ -18967,6 +18817,15 @@ __metadata:
   dependencies:
     makeerror: "npm:1.0.12"
   checksum: 10c0/a17e037bccd3ca8a25a80cb850903facdfed0de4864bd8728f1782370715d679fa72e0a0f5da7c1c1379365159901e5935f35be531229da53bbfc0efdabdb48e
+  languageName: node
+  linkType: hard
+
+"warning@npm:^4.0.2, warning@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "warning@npm:4.0.3"
+  dependencies:
+    loose-envify: "npm:^1.0.0"
+  checksum: 10c0/aebab445129f3e104c271f1637fa38e55eb25f968593e3825bd2f7a12bd58dc3738bb70dc8ec85826621d80b4acfed5a29ebc9da17397c6125864d72301b937e
   languageName: node
   linkType: hard
 

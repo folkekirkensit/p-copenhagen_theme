@@ -21,7 +21,7 @@
         <!--<li>{{link 'new_request' class='submit-a-request'}}</li>-->
         {{#unless signed_in}}
           <li>
-            {{#link "sign_in" class="sign-in"}}
+            {{#link "sign_in" class="sign-in" role="link"}}
               {{t 'sign_in'}}
             {{/link}}
           </li>
@@ -83,8 +83,8 @@
         {{else}}
           <li class="item">
             <a href="https://uddannelse.kirkenettet.dk" target="_blank">Uddannelse og videoer</a>
-            <a href="https://ihlp.kirkenettet.dk/popup.aspx?popup=customtemplate&subaction=verificeringssager&relationname=itemverificeringssagerrequestservice&label=itemverificeringssager" target="_blank">Bestil verificering</a>
-            {{#link "sign_in"}}
+            <a href="https://verificeringsformular.kirkenettet.dk/" target="_blank">Bestil verificering</a>
+            {{#link "sign_in" role="link"}}
               {{t 'sign_in'}}
             {{/link}}
           </li>

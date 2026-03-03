@@ -69,6 +69,10 @@ const ApproverActionsWrapper = styled.div`
   margin-top: ${(props) => props.theme.space.lg};
 `;
 
+const StyledDescription = styled(MD)`
+  white-space: pre-wrap;
+`;
+
 export interface ApprovalRequestPageProps {
   approvalWorkflowInstanceId: string;
   approvalRequestId: string;
@@ -95,7 +99,11 @@ function ApprovalRequestPage({
     setApprovalRequest,
     errorFetchingApprovalRequest: error,
     isLoading,
-  } = useApprovalRequest(approvalWorkflowInstanceId, approvalRequestId);
+  } = useApprovalRequest({
+    approvalWorkflowInstanceId: approvalWorkflowInstanceId,
+    approvalRequestId: approvalRequestId,
+    enablePolling: true,
+  });
 
   const { hasUserViewedBefore, markUserViewed } = useUserViewedApprovalStatus({
     approvalRequestId: approvalRequest?.id,
@@ -134,6 +142,8 @@ function ApprovalRequestPage({
   const hasClarificationEnabled =
     approvalRequest?.clarification_flow_messages !== undefined;
 
+  const collapsedMessage = approvalRequest.message.replace(/\n{3,}/g, "\n\n");
+
   return (
     <>
       <ApprovalRequestBreadcrumbs
@@ -143,7 +153,7 @@ function ApprovalRequestPage({
       <Container>
         <LeftColumn>
           <XXL isBold>{approvalRequest.subject}</XXL>
-          <MD>{approvalRequest.message}</MD>
+          <StyledDescription>{collapsedMessage}</StyledDescription>
           {approvalRequest.ticket_details && (
             <ApprovalTicketDetails ticket={approvalRequest.ticket_details} />
           )}
@@ -171,6 +181,7 @@ function ApprovalRequestPage({
         {hasClarificationEnabled && (
           <ClarificationArea>
             <ClarificationContainer
+              key={approvalRequest?.clarification_flow_messages?.length}
               approvalRequestId={approvalRequest.id}
               baseLocale={baseLocale}
               clarificationFlowMessages={
