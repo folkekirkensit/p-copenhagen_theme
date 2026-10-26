@@ -5,6 +5,6 @@ import "./dropdowns";
 import "./share";
 import "./search";
 import "./forms";
-import "./mssiware";
+import "./notificationBanner";
 import "./jokaware";
 import "./attachmentsort";

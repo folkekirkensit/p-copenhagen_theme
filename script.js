@@ -685,55 +685,134 @@
     }
   });
 
-  // MW-Notification Banner
-  document.addEventListener('DOMContentLoaded', async function () {
-    // Article label to be considered for the alerts
-    const label = 'drift';
+  // Notification banner
+  // Shows published articles with the label "drift" as a dismissible banner in `.alertbox`
 
-    // Get current help center locale
-    const locale = document
-        .querySelector('html')
-        .getAttribute('lang')
-        .toLowerCase();
+  // Article labels to be considered for the alerts
+  const LABELS = "drift";
+  const STORAGE_PREFIX = "notification-banner-closed-";
 
-    // URL to be called to get the alert data
-    const url = `/api/v2/help_center/${locale}/articles.json?label_names=${label}`;
-
-    // Raw data collected from the endpoint above
-    const response = await fetch(url);
-    const data = await response.json();
-
-    // List of articles returned
-    const articles = (data && data.articles) || [];
-    console.log('ingen artiker');
-    // Handle returned articles
-    for (let i = 0; i < articles.length; i++) {
-      const { html_url, title, id } = articles[i];
-      if (sessionStorage.getItem(id) === "closed") { continue; }
-      const html = `
-      <div class="ns-box ns-bar ns-effect-slidetop ns-type-notice ns-show">
-        <div class="ns-box-inner">
-          <span class="megaphone"></span>
-          <p>
-            <a href="${html_url}">${title} | Tryk her for at læse mere</a>
-          </p>
-        </div>
-        <span class="ns-close"></span>
-      </div>
-    `;
-      // Append current alert to the alertbox container
-      document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html);
+  // sessionStorage throws when the browser blocks site data, so the banner must not depend on it
+  function isClosed(articleId) {
+    try {
+      return sessionStorage.getItem(STORAGE_PREFIX + articleId) === "closed";
+    } catch (e) {
+      return false;
     }
-  });
+  }
 
-
-  document.addEventListener('click', function (event) {
-    // Close alertbox
-    if (event.target.matches('.ns-close')) {
-      event.preventDefault();
-      sessionStorage.setItem(event.target.parentElement.id, "closed");
-      event.target.parentElement.remove();
+  function rememberClosed(articleId) {
+    try {
+      sessionStorage.setItem(STORAGE_PREFIX + articleId, "closed");
+    } catch (e) {
+      // Banner stays closed until the next page load
     }
+  }
+
+  // Built with DOM methods so article titles are always treated as text, never as HTML
+  function createBanner(article) {
+    const banner = document.createElement("div");
+    banner.className = "ns-box";
+    banner.setAttribute("data-article-id", article.id);
+
+    const icon = document.createElement("span");
+    icon.className = "ns-icon";
+    icon.setAttribute("aria-hidden", "true");
+
+    const text = document.createElement("p");
+    text.className = "ns-text";
+
+    const link = document.createElement("a");
+    link.href = article.html_url;
+    link.textContent = article.title;
+
+    text.appendChild(link);
+    text.appendChild(document.createTextNode(" - Læs mere"));
+
+    const close = document.createElement("button");
+    close.type = "button";
+    close.className = "ns-close";
+    close.setAttribute("aria-label", `Luk driftsmeddelelse: ${article.title}`);
+
+    banner.appendChild(icon);
+    banner.appendChild(text);
+    banner.appendChild(close);
+
+    return banner;
+  }
+
+  // Move focus somewhere sensible, since the focused close button is removed from the page
+  function moveFocusAfterClose(region, banner) {
+    const next = banner.nextElementSibling || banner.previousElementSibling;
+
+    if (next) {
+      next.querySelector(".ns-close").focus();
+      return;
+    }
+
+    region.remove();
+
+    const main = document.getElementById("main-content");
+    if (main) {
+      if (!main.hasAttribute("tabindex")) {
+        main.setAttribute("tabindex", "-1");
+      }
+      main.focus();
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const alertbox = document.querySelector(".alertbox");
+    if (!alertbox) {
+      return;
+    }
+
+    const locale = document.documentElement.getAttribute("lang").toLowerCase();
+    const url = `/api/v2/help_center/${locale}/articles.json?label_names=${LABELS}`;
+
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(
+            `Notification banner request failed: ${response.status}`
+          );
+        }
+        return response.json();
+      })
+      .then((data) => {
+        const articles = ((data && data.articles) || []).filter(
+          (article) => !isClosed(article.id)
+        );
+
+        if (articles.length === 0) {
+          return;
+        }
+
+        const region = document.createElement("section");
+        region.className = "notification-banner";
+        region.setAttribute("aria-label", "Driftsmeddelelser");
+
+        articles.forEach((article) => {
+          region.appendChild(createBanner(article));
+        });
+
+        region.addEventListener("click", (event) => {
+          const close = event.target.closest(".ns-close");
+          if (!close) {
+            return;
+          }
+
+          const banner = close.closest(".ns-box");
+          rememberClosed(banner.getAttribute("data-article-id"));
+          moveFocusAfterClose(region, banner);
+          banner.remove();
+        });
+
+        alertbox.appendChild(region);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   });
 
   // Tilbage til top knap
